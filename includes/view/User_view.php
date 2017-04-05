@@ -5,6 +5,7 @@
  */
 $tshirt_sizes = [
     '' => _("Please select..."),
+    'XS' => "XS",
     'S' => "S",
     'M' => "M",
     'L' => "L",
@@ -13,6 +14,7 @@ $tshirt_sizes = [
     '3XL' => "3XL",
     '4XL' => "4XL",
     '5XL' => "5XL",
+    'XS-G' => "XS Girl",
     'S-G' => "S Girl",
     'M-G' => "M Girl",
     'L-G' => "L Girl",
