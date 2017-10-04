@@ -15,7 +15,9 @@ function admin_rooms() {
         'actions' => table_buttons([
             button(page_link_to('admin_rooms') . '&show=edit&id=' . $room['RID'], _("edit"), 'btn-xs'),
             button(page_link_to('admin_rooms') . '&show=delete&id=' . $room['RID'], _("delete"), 'btn-xs') 
-        ]) 
+        ]),
+        'comment' => $room['comment'],
+        'Number' => $room['Number']
     ];
   }
   $room = null;
@@ -49,7 +51,7 @@ function admin_rooms() {
       $from_pentabarf = $room['FromPentabarf'];
       $public = $room['show'];
       $number = $room['Number'];
-      $number = $room['comment'];
+      $comment = $room['comment'];
       
       $needed_angeltypes = sql_select("SELECT * FROM `NeededAngelTypes` WHERE `room_id`='" . sql_escape($room_id) . "'");
       foreach ($needed_angeltypes as $needed_angeltype) {
