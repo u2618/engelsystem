@@ -99,7 +99,7 @@ class ShiftCalendarShiftRenderer {
     }
     
     if (in_array('user_shifts_admin', $privileges)) {
-      $html .= '<li class="list-group-item">' . button(page_link_to('user_shifts') . '&amp;shift_id=' . $shift['SID'], _("Add more angels"), 'btn-xs') . '</li>';
+      $html .= '<li class="list-group-item">' . button(page_link_to('user_shifts') . '&amp;shift_id=' . $shift['SID']. '&amp;type_id=' . $shift['shifttype_id'], _("Add more angels"), 'btn-xs') . '</li>';
     }
     if ($html != '') {
       return [
