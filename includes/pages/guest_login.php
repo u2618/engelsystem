@@ -343,7 +343,8 @@ function guest_login() {
                           ]) 
                       ]),
                       div('panel-footer', [
-                          glyph('info-sign') . _("Please note: You have to activate cookies!") 
+			  glyph('info-sign') . _("Please note: You have to activate cookies!") ."<br/>".glyph('info-sign') . _("You can login with your ZaPF-Account (<a href=\"https://auth.zapf.in\">Manage account/Reset password</a>)")
+	    
                       ]) 
                   ]) 
               ]) 
